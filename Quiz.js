@@ -23,6 +23,10 @@ const questionsData = [
           .correctAnswer));
       }
     }
+    getRandomQuestion() {
+        const randomIndex = Math.floor(Math.random() * this.questions.length);
+        return this.questions[randomIndex];
+      }
   }
   
-  module.exports = questionsData;
+  module.exports = Quiz;
