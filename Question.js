@@ -6,4 +6,7 @@ class Question {
       this.options = options;
       this.correctAnswer = correctAnswer; // Make sure to assign the value here
     }
+    isCorrectAnswer(answer) {
+        return this.correctAnswer === answer;
+      }
   }
