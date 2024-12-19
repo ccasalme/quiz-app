@@ -13,5 +13,16 @@ const questionsData = [
       correctAnswer: "Gojo",
     },
   ];
+
+  class Quiz {
+    constructor() {
+      this.questions = [];
+      for (let i = 0; i < questionsData.length; i++) {
+        const q = questionsData[i];
+        this.questions.push(new Question(q.id, q.question, q.options, q
+          .correctAnswer));
+      }
+    }
+  }
   
   module.exports = questionsData;
